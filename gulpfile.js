@@ -218,40 +218,6 @@ gulp.task('images-2', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-//
-// Gulp tasks that minimizes jasmine files in ./src/views/images folder and
-// pushes them into ./dist/views/images folder
-//
-gulp.task('jasmine-1', function() {
-    gulp.src('./src/jasmine/lib/jasmine-2.1.2/*.*')
-        .pipe(imagemin())
-        .pipe(rename({
-            dirname: "jasmine/lib/jasmine-2.1.2"
-            //suffix: "-min"
-        }))
-        .pipe(gulp.dest('./dist'));
-});
-
-gulp.task('jasmine-2', function() {
-    gulp.src('./src/jasmine/spec/*.*')
-        .pipe(imagemin())
-        .pipe(rename({
-            dirname: "jasmine/spec"
-            //suffix: "-min"
-        }))
-        .pipe(gulp.dest('./dist'));
-});
-
-//
-// Gulp task that is a collection of all minify tasks
-//
-gulp.task('minify-jasmine', function (cb) {
-  return sequence(
-    'jasmine-1',
-    'jasmine-2',
-    cb
-  );
-});
 
 //
 // Gulp task that is a collection of all minify tasks
