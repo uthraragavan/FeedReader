@@ -32,6 +32,7 @@ npm install
 
 * **Download the project assets from Github**: https://github.com/uthraragavan/FeedReader
 * **Starting web app**: From Node JS command prompt, navigate to the project asset folder on your system and type gulp. This will start the web app over ngrok proxy. A browser window showing index.html from dist folder shows up. The gulp command from command prompt should display something like this:
+
  ```
 [17:44:01] Using gulpfile ~\Desktop\Udacity\FrontEnd\Feed Reader Testing\frontend-nanodegree-feedreader-master\gulpfile.js
 [17:44:01] Starting 'webhost'...
@@ -52,5 +53,6 @@ serving your tunnel from: https://4f854c81.ngrok.io
  UI External: http://192.168.0.103:3001
  --------------------------------------
 [BS] Serving files from: ./dist
+
 ```
 The results of the test cases appear in the bottom of index.html.
